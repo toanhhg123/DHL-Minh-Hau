@@ -1,0 +1,55 @@
+.feauter {
+    padding-top: 2rem;
+
+    background-color: #fff;
+    &__content {
+        & h3 {
+            color: #1b75bb;
+            font-size: 1.8rem;
+            font-weight: 700;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                height: 1px;
+                width: 20%;
+                bottom: 0;
+                left: 0;
+                background-color: #1b75bb;
+            }
+        }
+        & p {
+            color: #4d5d6d;
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+            margin-bottom: 2rem;
+        }
+
+        & a {
+            display: block;
+            width: max-content;
+        }
+    }
+
+    &__img {
+        text-align: center;
+        & img {
+            width: 450px;
+            max-width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .feauter {
+        &__img {
+            margin-top: 2rem;
+            & img {
+                max-width: 100%;
+            }
+        }
+    }
+}

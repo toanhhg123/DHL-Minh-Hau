@@ -1,0 +1,32 @@
+.sevice {
+    margin-top: 6rem;
+    color: #19263a;
+
+    &__container {
+        & > h2 {
+            font-size: 40px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        & > p {
+            font-size: 18px;
+            text-align: center;
+            font-weight: 400;
+            width: 800px;
+            max-width: 90%;
+            margin: 2rem auto;
+        }
+
+        & .sevice__cards {
+            & .sv__card {
+                margin-bottom: 2rem;
+                & .sv__content {
+                    padding: 1rem 0;
+                    background: #fff;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

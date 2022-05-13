@@ -1,0 +1,38 @@
+.info {
+    background-color: #fff;
+    padding-top: 2rem;
+    &__container {
+        margin: 0 auto;
+        text-align: center;
+    }
+    &-item {
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+        margin-bottom: 2rem;
+        border-radius: 0.2rem;
+        padding: 1rem;
+        & img {
+            width: 120px;
+            display: block;
+            margin: 1rem auto;
+        }
+        & h5 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #00aff0;
+            font-weight: 700;
+        }
+
+        & p {
+            color: #0a2a43;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            font-weight: 500;
+        }
+
+        &:hover {
+            box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.advise {
+    height: 300px;
+    position: relative;
+    background-color: #f5f5f5;
+    background-image: url(https://staging-gatewayexpress.kinsta.cloud/wp-content/uploads/2020/08/customer-support-home-background-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__container {
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.3);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: #fff;
+        & h3 {
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        & p {
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .advise {
+        &__container {
+            color: #fff;
+            text-align: center;
+            & h3 {
+                font-size: 1.5rem;
+            }
+            & p {
+                font-size: 1rem;
+            }
+        }
+    }
+}

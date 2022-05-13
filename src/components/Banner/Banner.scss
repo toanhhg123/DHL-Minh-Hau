@@ -1,0 +1,136 @@
+.banner {
+    background-color: #fff;
+    margin-top: var(--height-header);
+    color: #00aff0;
+
+    &__container {
+        padding-top: 6rem;
+        margin: 0 auto;
+    }
+    &-left {
+        & h3 {
+            font-size: 2.2rem;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+
+        & .banner-description {
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+            margin: 1rem 0;
+            color: #0a2a43;
+            font-weight: 500;
+            & span:first-child {
+                font-weight: bold;
+            }
+        }
+    }
+
+    &__img__right {
+        border-radius: 34% 12% 36% 24%;
+
+        overflow: hidden;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+    &-animation-text {
+        margin: 1rem 0;
+        font-weight: 700;
+        font-size: 1.8rem;
+        display: flex;
+        height: 1.8rem;
+        overflow: hidden;
+
+        & ul {
+            margin-left: 0.5rem;
+            font-weight: 600;
+            & li {
+                width: max-content;
+                font-size: 1.5rem;
+                line-height: 1.8rem;
+                height: 1.8rem;
+                animation: slide 6s steps(3) infinite;
+                position: relative;
+            }
+
+            & li:before {
+                content: '';
+                background-color: #fff;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                left: 0;
+                border-left: 2px solid #0a2a43;
+                animation: typing 2s infinite;
+            }
+            @keyframes typing {
+                100% {
+                    left: 100%;
+                }
+            }
+            @keyframes slide {
+                100% {
+                    transform: translateY(-5.4rem);
+                }
+            }
+        }
+    }
+
+    &-buttons {
+        padding: 3rem 0;
+        display: flex;
+        gap: 1rem;
+        & a {
+            display: block;
+            padding: 1.2rem 1rem;
+            margin: 1rem 0;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            background-color: #00aff0;
+            transition: all 0.3s ease-in-out;
+            border-radius: 0.2rem;
+        }
+
+        & a:nth-child(2) {
+            border: 1px solid #0693e3;
+            background-color: transparent;
+            color: #0a2a43;
+
+            &:hover {
+                background-color: #0693e3;
+                color: #fff;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .banner {
+        &__container {
+            padding-top: 4rem;
+        }
+        &-left {
+            & h3 {
+                font-size: 1.8rem;
+            }
+            & .banner-description {
+                font-size: 1.2rem;
+            }
+        }
+        &-animation-text {
+            font-size: 1.5rem;
+            & ul {
+                & li {
+                    font-size: 1.2rem;
+                    line-height: 1.5rem;
+                }
+            }
+        }
+        &-buttons {
+            & a {
+                font-size: 1rem;
+            }
+        }
+    }
+}
