@@ -13,25 +13,25 @@ const NavMb = ({ setNavMb }) => {
                 </li>
 
                 <li>
-                    <Link to="">
+                    <Link to="/">
                         <i className="fa-solid fa-info-circle"></i>
                         <span>Giới Thiệu</span>
                     </Link>
                 </li>
                 <li>
-                    <Link to="">
+                    <Link to="/service">
                         <i className="fa-solid fa-plane-circle-check"></i>
                         <span>Dịch Vụ</span>
                     </Link>
                 </li>
                 <li>
-                    <Link to="">
+                    <Link to="/">
                         <i className="fa-solid fa-plane-departure"></i>
                         <span>Track</span>
                     </Link>
                 </li>
                 <li>
-                    <Link to="">
+                    <Link to="/blog">
                         <i className="fa-solid fa-blog"></i>
                         <span>Blog</span>
                     </Link>
